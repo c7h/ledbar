@@ -1,0 +1,5 @@
+Control the Shiftregister outputs using the Raspberry PI GPIO Ports and Python.
+- Display interesting LED patterns.
+- Build your own LED Bargraph
+- be creative!
+
