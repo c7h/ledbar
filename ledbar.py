@@ -92,4 +92,4 @@ class Statusbar(Ledbar, deque):
 		# 1 1 0 0 0 0 0 0 0 0
 		# 20%
 		percentPattern = [1]* int(round((float(self.getLength())/100.0 * percent)))
-		#self.setLeds(percentPattern)
+		super(Statusbar, self).setPattern(percentPattern)
