@@ -11,7 +11,7 @@ def lauflicht(pattern):
     example usage: Oppa Knightrider Style!
     '''
     LEDBAR_LEN = 20
-    b = Ledbar(LEDBAR_LEN, latch_pin=1, clock_pin=2, data_pin=3)
+    b = Ledbar(LEDBAR_LEN, latch_pin=23, clock_pin=24, data_pin=25)
 
     queue = deque(pattern)
     while True:

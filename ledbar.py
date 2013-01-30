@@ -4,7 +4,7 @@
 
 from collections import deque
 try:
-	import RPI.GPIO as GPIO
+	import RPi.GPIO as GPIO
 except ImportError:
 	print "could not find RPI.GPIO..."
 	import fake_gpio as GPIO
@@ -21,7 +21,7 @@ class Ledbar(object):
 		self.length = length
 		
 		#initialize GPIOs
-		GPIO.setmode(GPIO.BOARD)
+		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(self.latch, GPIO.OUT)
 		GPIO.setup(self.clock, GPIO.OUT)
 		GPIO.setup(self.data,  GPIO.OUT)
